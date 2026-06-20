@@ -9,4 +9,4 @@ COPY src /app/src
 
 RUN python -m pip install --no-cache-dir .
 
-CMD ["blog-watcher", "run", "-c", "/app/config.toml", "--db-path", "/data/blog_states.sqlite"]
+CMD ["blog-watcher", "-c", "/app/config.toml", "--db-path", "/data/blog_states.sqlite"]
